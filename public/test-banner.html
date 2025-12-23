@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NAIIS Banner Test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #1a1a1a;
+            font-family: Arial, sans-serif;
+        }
+
+        .test-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #16a34a;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .status {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="test-container">
+        <h1>🩺 NAIIS Banner Image Test</h1>
+        <div class="status">
+            ✅ If you can see the green NAIIS cover below, the image is working!
+        </div>
+
+        <h2>Direct Image Path:</h2>
+        <p><code>/naiis-banner.png</code></p>
+
+        <img src="/naiis-banner.png" alt="NAIIS 2018 Banner"
+            onerror="this.style.border='3px solid red'; this.alt='❌ Image failed to load'">
+
+        <p style="margin-top: 20px; color: #666;">
+            <strong>File size:</strong> 205KB<br>
+            <strong>Location:</strong> /public/naiis-banner.png<br>
+            <strong>Expected:</strong> Green background with dotted Nigeria map
+        </p>
+    </div>
+</body>
+
+</html>

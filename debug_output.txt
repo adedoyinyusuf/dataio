@@ -1,0 +1,38 @@
+[
+  {
+    "id": "c292fcc8-df83-4ee7-b26d-9ab53931d749",
+    "survey_id": "33a6af69-de75-4c5d-a97b-053f6c1194f9",
+    "key": "demographics",
+    "title": "Household Population",
+    "description": null,
+    "display_order": 1,
+    "created_at": "2025-12-20T11:27:30.362Z"
+  },
+  {
+    "id": "d0a2afff-dd61-42c7-8b7a-88420faa345a",
+    "survey_id": "33a6af69-de75-4c5d-a97b-053f6c1194f9",
+    "key": "attendance",
+    "title": "School Attendance",
+    "description": null,
+    "display_order": 2,
+    "created_at": "2025-12-20T11:27:30.362Z"
+  },
+  {
+    "id": "14a2c7f5-465e-4cee-bdbf-afeaa1bca4b6",
+    "survey_id": "33a6af69-de75-4c5d-a97b-053f6c1194f9",
+    "key": "literacy",
+    "title": "Literacy & Numeracy",
+    "description": null,
+    "display_order": 3,
+    "created_at": "2025-12-20T11:27:30.362Z"
+  },
+  {
+    "id": "a35d98b8-f36a-4fcb-926f-9c31a0a13395",
+    "survey_id": "33a6af69-de75-4c5d-a97b-053f6c1194f9",
+    "key": "expenditure",
+    "title": "Household Expenditure",
+    "description": null,
+    "display_order": 4,
+    "created_at": "2025-12-20T11:27:30.362Z"
+  }
+]

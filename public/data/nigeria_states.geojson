@@ -1,0 +1,1374 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sokoto"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4,
+              13
+            ],
+            [
+              4.5,
+              13.8
+            ],
+            [
+              5.8,
+              13.5
+            ],
+            [
+              5.5,
+              12.2
+            ],
+            [
+              4.2,
+              12
+            ],
+            [
+              4,
+              13
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kebbi"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              3.5,
+              11.5
+            ],
+            [
+              4,
+              12.8
+            ],
+            [
+              5.3,
+              12
+            ],
+            [
+              5,
+              10.5
+            ],
+            [
+              3.8,
+              10.2
+            ],
+            [
+              3.5,
+              11.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zamfara"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5.5,
+              12.8
+            ],
+            [
+              6.2,
+              13.2
+            ],
+            [
+              7,
+              12.8
+            ],
+            [
+              6.8,
+              11.2
+            ],
+            [
+              5.8,
+              11.5
+            ],
+            [
+              5.5,
+              12.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Katsina"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7,
+              13.3
+            ],
+            [
+              8.5,
+              13.5
+            ],
+            [
+              8.8,
+              12
+            ],
+            [
+              7.2,
+              11.8
+            ],
+            [
+              6.8,
+              12.5
+            ],
+            [
+              7,
+              13.3
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kano"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.8,
+              12.3
+            ],
+            [
+              9.2,
+              12.5
+            ],
+            [
+              9.5,
+              11.2
+            ],
+            [
+              8.2,
+              10.8
+            ],
+            [
+              7.5,
+              11.5
+            ],
+            [
+              7.8,
+              12.3
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jigawa"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9,
+              12.8
+            ],
+            [
+              10.5,
+              13
+            ],
+            [
+              10.8,
+              11.8
+            ],
+            [
+              9.5,
+              11
+            ],
+            [
+              8.8,
+              11.8
+            ],
+            [
+              9,
+              12.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kaduna"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.5,
+              11.3
+            ],
+            [
+              8,
+              11.5
+            ],
+            [
+              8.8,
+              10.2
+            ],
+            [
+              7.8,
+              9.2
+            ],
+            [
+              6.2,
+              9.5
+            ],
+            [
+              6.5,
+              11.3
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Yobe"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.5,
+              13.2
+            ],
+            [
+              12.5,
+              13.5
+            ],
+            [
+              12.8,
+              11.8
+            ],
+            [
+              11,
+              11.2
+            ],
+            [
+              10.3,
+              12
+            ],
+            [
+              10.5,
+              13.2
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Borno"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12,
+              13.8
+            ],
+            [
+              14.5,
+              13.5
+            ],
+            [
+              14.8,
+              11.5
+            ],
+            [
+              13,
+              10.2
+            ],
+            [
+              11.8,
+              11.5
+            ],
+            [
+              12,
+              13.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bauchi"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.8,
+              11.3
+            ],
+            [
+              10.2,
+              11.5
+            ],
+            [
+              10.8,
+              10.2
+            ],
+            [
+              9.8,
+              9.8
+            ],
+            [
+              8.5,
+              10
+            ],
+            [
+              8.8,
+              11.3
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gombe"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.5,
+              11.2
+            ],
+            [
+              11.8,
+              11.3
+            ],
+            [
+              12,
+              10
+            ],
+            [
+              10.8,
+              9.5
+            ],
+            [
+              10.2,
+              10.2
+            ],
+            [
+              10.5,
+              11.2
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Adamawa"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.5,
+              10.8
+            ],
+            [
+              13.5,
+              11
+            ],
+            [
+              13.8,
+              8.5
+            ],
+            [
+              12.5,
+              7.5
+            ],
+            [
+              11.2,
+              8
+            ],
+            [
+              11.5,
+              10.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Taraba"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.5,
+              9.5
+            ],
+            [
+              11.5,
+              9.8
+            ],
+            [
+              12,
+              8
+            ],
+            [
+              10.8,
+              6.8
+            ],
+            [
+              9.2,
+              7.5
+            ],
+            [
+              9.5,
+              9.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Niger"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.2,
+              10.8
+            ],
+            [
+              6.5,
+              11
+            ],
+            [
+              7,
+              9.5
+            ],
+            [
+              6.2,
+              8.5
+            ],
+            [
+              4,
+              8.8
+            ],
+            [
+              4.2,
+              10.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kwara"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.8,
+              9.8
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              5.5,
+              8.8
+            ],
+            [
+              4.5,
+              8
+            ],
+            [
+              2.5,
+              8.5
+            ],
+            [
+              2.8,
+              9.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "FCT-Abuja"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.8,
+              9.3
+            ],
+            [
+              7.5,
+              9.5
+            ],
+            [
+              7.6,
+              8.7
+            ],
+            [
+              7,
+              8.5
+            ],
+            [
+              6.7,
+              8.8
+            ],
+            [
+              6.8,
+              9.3
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nasarawa"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.2,
+              9.2
+            ],
+            [
+              8.5,
+              9
+            ],
+            [
+              8.8,
+              8
+            ],
+            [
+              7.8,
+              7.5
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              7.2,
+              9.2
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Plateau"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.5,
+              10.3
+            ],
+            [
+              10,
+              10.5
+            ],
+            [
+              10.2,
+              9
+            ],
+            [
+              9,
+              8.5
+            ],
+            [
+              8.3,
+              9
+            ],
+            [
+              8.5,
+              10.3
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Benue"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.5,
+              8.5
+            ],
+            [
+              9.5,
+              8.8
+            ],
+            [
+              10,
+              7.2
+            ],
+            [
+              8.5,
+              6.8
+            ],
+            [
+              7.2,
+              7.5
+            ],
+            [
+              7.5,
+              8.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kogi"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5.5,
+              8.7
+            ],
+            [
+              7.2,
+              9
+            ],
+            [
+              7.8,
+              7.8
+            ],
+            [
+              6.8,
+              6.8
+            ],
+            [
+              5.2,
+              7.2
+            ],
+            [
+              5.5,
+              8.7
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oyo"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.8,
+              8.8
+            ],
+            [
+              4.2,
+              9
+            ],
+            [
+              4.5,
+              7.5
+            ],
+            [
+              3.5,
+              7.2
+            ],
+            [
+              2.5,
+              7.8
+            ],
+            [
+              2.8,
+              8.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Osun"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4,
+              8
+            ],
+            [
+              4.8,
+              8.2
+            ],
+            [
+              5,
+              7.2
+            ],
+            [
+              4.2,
+              7
+            ],
+            [
+              3.8,
+              7.5
+            ],
+            [
+              4,
+              8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ekiti"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5,
+              8.2
+            ],
+            [
+              5.8,
+              8
+            ],
+            [
+              5.5,
+              7.3
+            ],
+            [
+              4.8,
+              7.4
+            ],
+            [
+              4.9,
+              7.8
+            ],
+            [
+              5,
+              8.2
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ondo"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.5,
+              7.5
+            ],
+            [
+              5.8,
+              7.8
+            ],
+            [
+              6.2,
+              6.2
+            ],
+            [
+              5.2,
+              5.8
+            ],
+            [
+              4.3,
+              6.5
+            ],
+            [
+              4.5,
+              7.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ogun"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.8,
+              7.5
+            ],
+            [
+              3.8,
+              7.8
+            ],
+            [
+              4.5,
+              6.8
+            ],
+            [
+              3.8,
+              6.3
+            ],
+            [
+              2.7,
+              6.8
+            ],
+            [
+              2.8,
+              7.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lagos"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.7,
+              6.8
+            ],
+            [
+              3.8,
+              6.5
+            ],
+            [
+              3.5,
+              6.3
+            ],
+            [
+              2.8,
+              6.35
+            ],
+            [
+              2.65,
+              6.5
+            ],
+            [
+              2.7,
+              6.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Edo"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5.2,
+              7.5
+            ],
+            [
+              6.5,
+              7.8
+            ],
+            [
+              6.8,
+              6.2
+            ],
+            [
+              5.8,
+              5.8
+            ],
+            [
+              5,
+              6.5
+            ],
+            [
+              5.2,
+              7.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Delta"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5,
+              6.5
+            ],
+            [
+              6.5,
+              6.8
+            ],
+            [
+              6.8,
+              5.2
+            ],
+            [
+              5.8,
+              4.8
+            ],
+            [
+              4.8,
+              5.5
+            ],
+            [
+              5,
+              6.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayelsa"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5,
+              5.5
+            ],
+            [
+              6.2,
+              5.8
+            ],
+            [
+              6,
+              4.5
+            ],
+            [
+              5.2,
+              4.3
+            ],
+            [
+              4.8,
+              4.8
+            ],
+            [
+              5,
+              5.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rivers"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.3,
+              5.8
+            ],
+            [
+              7.2,
+              5.5
+            ],
+            [
+              7,
+              4.5
+            ],
+            [
+              6,
+              4.3
+            ],
+            [
+              6.2,
+              5
+            ],
+            [
+              6.3,
+              5.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Akwa Ibom"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.5,
+              5.5
+            ],
+            [
+              8.2,
+              5.3
+            ],
+            [
+              8,
+              4.5
+            ],
+            [
+              7.2,
+              4.4
+            ],
+            [
+              7.3,
+              5
+            ],
+            [
+              7.5,
+              5.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cross River"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.8,
+              7
+            ],
+            [
+              9.2,
+              6.8
+            ],
+            [
+              9,
+              5
+            ],
+            [
+              8,
+              4.8
+            ],
+            [
+              7.5,
+              5.5
+            ],
+            [
+              7.8,
+              7
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Enugu"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.8,
+              7
+            ],
+            [
+              7.6,
+              7.2
+            ],
+            [
+              7.5,
+              6.3
+            ],
+            [
+              6.8,
+              6.2
+            ],
+            [
+              6.7,
+              6.6
+            ],
+            [
+              6.8,
+              7
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ebonyi"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.5,
+              6.8
+            ],
+            [
+              8.2,
+              6.5
+            ],
+            [
+              8,
+              5.8
+            ],
+            [
+              7.2,
+              5.8
+            ],
+            [
+              7.4,
+              6.3
+            ],
+            [
+              7.5,
+              6.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Anambra"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.5,
+              6.8
+            ],
+            [
+              7,
+              6.5
+            ],
+            [
+              6.8,
+              6
+            ],
+            [
+              6.2,
+              6.1
+            ],
+            [
+              6.4,
+              6.4
+            ],
+            [
+              6.5,
+              6.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Imo"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.5,
+              6
+            ],
+            [
+              7.2,
+              5.8
+            ],
+            [
+              7,
+              5.2
+            ],
+            [
+              6.3,
+              5.3
+            ],
+            [
+              6.4,
+              5.6
+            ],
+            [
+              6.5,
+              6
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Abia"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7,
+              6
+            ],
+            [
+              7.8,
+              5.8
+            ],
+            [
+              7.5,
+              5
+            ],
+            [
+              6.8,
+              5
+            ],
+            [
+              6.9,
+              5.5
+            ],
+            [
+              7,
+              6
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

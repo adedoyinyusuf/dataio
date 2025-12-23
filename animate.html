@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Data Flow Animation</title>
+    <style>
+        body {
+            background-color: #111;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Container for the animation */
+        #stage {
+            width: 800px;
+            height: 300px;
+            position: relative;
+            background: #1a1a1a;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+
+        /* The horizontal track line */
+        .track-line {
+            position: absolute;
+            top: 50%;
+            left: 50px;
+            right: 50px;
+            height: 2px;
+            background: #333;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+
+        /* SVG Overlay for shapes */
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+        }
+
+        /* Labels */
+        .labels {
+            display: flex;
+            justify-content: space-between;
+            width: 800px;
+            margin-top: 20px;
+            padding: 0 50px;
+            box-sizing: border-box;
+        }
+
+        .label {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+            transition: color 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            width: 33%;
+        }
+
+        .label.active {
+            color: #fff;
+            text-shadow: 0 0 10px white;
+        }
+
+        /* The Elements */
+        .scanner-ring {
+            fill: none;
+            stroke: #00d2ff;
+            stroke-width: 3;
+            opacity: 0.5;
+        }
+
+        /* The "Data" Shapes */
+        .data-packet {
+            transform-origin: center;
+        }
+
+        /* The Chart Bars */
+        .chart-bar {
+            fill: #4ade80;
+            /* Green */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="stage">
+        <div class="track-line"></div>
+        <svg id="svg-stage" viewBox="0 0 800 300">
+            <rect x="50" y="125" width="50" height="50" fill="none" stroke="#666" stroke-width="2" rx="5" />
+
+            <path class="scanner-ring" d="M 380 110 L 360 110 L 360 190 L 380 190" />
+            <path class="scanner-ring" d="M 420 110 L 440 110 L 440 190 L 420 190" />
+
+            <line x1="650" y1="200" x2="750" y2="200" stroke="#666" stroke-width="2" />
+
+            <rect id="bar1" class="chart-bar" x="660" y="200" width="20" height="0" />
+            <rect id="bar2" class="chart-bar" x="690" y="200" width="20" height="0" />
+            <rect id="bar3" class="chart-bar" x="720" y="200" width="20" height="0" />
+        </svg>
+    </div>
+
+    <div class="labels">
+        <div id="label-1" class="label">1. Raw Input</div>
+        <div id="label-2" class="label">2. Processing</div>
+        <div id="label-3" class="label">3. Insight</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script>
+        const svgStage = document.getElementById("svg-stage");
+
+        // Helper to create a shape
+        function createPacket(type) {
+            const el = document.createElementNS("http://www.w3.org/2000/svg", type === 'rect' ? 'rect' : 'polygon');
+            el.setAttribute("class", "data-packet");
+            el.setAttribute("fill", "#ff4d4d"); // Red (Raw/Bad)
+
+            if (type === 'rect') {
+                el.setAttribute("width", 30);
+                el.setAttribute("height", 30);
+                el.setAttribute("x", 60);
+                el.setAttribute("y", 135);
+            } else {
+                // Triangle points
+                el.setAttribute("points", "75,135 90,165 60,165");
+            }
+            svgStage.appendChild(el);
+            return el;
+        }
+
+        const tl = gsap.timeline({ repeat: -1, repeatDelay: 1 });
+
+        // --- ANIMATION SEQUENCE FOR 3 PACKETS ---
+
+        // Loop 3 times for 3 different data points
+        for (let i = 1; i <= 3; i++) {
+
+            // 1. Create a "Raw" shape (alternating square/triangle)
+            let packet = createPacket(i % 2 === 0 ? 'triangle' : 'rect');
+
+            // Step A: Move from Source to Scanner
+            tl.addLabel(`start-${i}`);
+
+            // Highlight Label 1
+            tl.to("#label-1", { className: "label active", duration: 0.2 }, `start-${i}`);
+            tl.to("#label-2", { className: "label", duration: 0.2 }, `start-${i}`);
+            tl.to("#label-3", { className: "label", duration: 0.2 }, `start-${i}`);
+
+            tl.to(packet, {
+                x: 320, // Move to center scanner
+                rotation: 360,
+                duration: 1.5,
+                ease: "power2.inOut"
+            }, `start-${i}`);
+
+            // Step B: PROCESSING (The Transformation)
+            tl.addLabel(`process-${i}`);
+            tl.to("#label-1", { className: "label", duration: 0.2 }, `process-${i}`);
+            tl.to("#label-2", { className: "label active", duration: 0.2 }, `process-${i}`);
+
+            // Flash the scanner brackets
+            tl.to(".scanner-ring", { stroke: "#fff", duration: 0.1, yoyo: true, repeat: 3 }, `process-${i}`);
+
+            // Morph the packet: Turn Green, Become Circle (using scale/radius trick)
+            tl.to(packet, {
+                fill: "#4ade80", // Green
+                rx: 15, // Max corner radius makes a square a circle
+                scale: 0.8, // Slightly smaller
+                duration: 0.5
+            }, `process-${i}`);
+
+            // Step C: Move to Chart
+            tl.addLabel(`deliver-${i}`);
+            tl.to("#label-2", { className: "label", duration: 0.2 }, `deliver-${i}`);
+            tl.to("#label-3", { className: "label active", duration: 0.2 }, `deliver-${i}`);
+
+            tl.to(packet, {
+                x: 600 + (i * 30), // Move to specific bar column
+                y: 50, // Move down towards the baseline slightly
+                duration: 1,
+                ease: "power2.in"
+            }, `deliver-${i}`);
+
+            // Step D: Absorb into Chart
+            // Packet disappears
+            tl.to(packet, { scale: 0, duration: 0.2 }, `deliver-${i}+=1`);
+            // Bar Grows
+            tl.to(`#bar${i}`, {
+                height: i * 40, // Different heights
+                y: 200 - (i * 40), // Grow UP from baseline
+                duration: 0.5,
+                ease: "back.out(1.7)"
+            }, `deliver-${i}+=1.1`);
+        }
+
+        // RESET PHASE
+        tl.addLabel("reset");
+        tl.to(".chart-bar", { height: 0, y: 200, duration: 0.5, stagger: 0.1 }, "reset+=2");
+        tl.to("#label-3", { className: "label", duration: 0.2 }, "reset+=2");
+
+        // Cleanup packets so they don't pile up in DOM
+        tl.call(() => {
+            document.querySelectorAll('.data-packet').forEach(e => e.remove());
+        });
+
+    </script>
+</body>
+
+</html>
