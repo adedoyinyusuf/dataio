@@ -1,5 +1,10 @@
 import { Pool } from 'pg';
 
+// Determine if we should use SSL
+const isProduction = process.env.NODE_ENV === 'production';
+const isNeonDB = process.env.DB_HOST?.includes('neon.tech') || false;
+const useSSL = isProduction || isNeonDB;
+
 const pool = new Pool({
     host: process.env.DB_HOST || 'localhost',
     port: parseInt(process.env.DB_PORT || '5432'),
@@ -9,9 +14,7 @@ const pool = new Pool({
     max: 20,
     idleTimeoutMillis: 30000,
     connectionTimeoutMillis: 2000,
-    ssl: process.env.DB_HOST?.includes('neon.tech') || process.env.NODE_ENV === 'production'
-        ? { rejectUnauthorized: false }
-        : false,
+    ssl: useSSL ? { rejectUnauthorized: false } : false,
 });
 
 export async function query(text: string, params?: any[]) {
