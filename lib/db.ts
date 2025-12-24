@@ -9,6 +9,9 @@ const pool = new Pool({
     max: 20,
     idleTimeoutMillis: 30000,
     connectionTimeoutMillis: 2000,
+    ssl: process.env.DB_HOST?.includes('neon.tech') || process.env.NODE_ENV === 'production'
+        ? { rejectUnauthorized: false }
+        : false,
 });
 
 export async function query(text: string, params?: any[]) {
