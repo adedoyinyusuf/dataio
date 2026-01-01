@@ -1,0 +1,3 @@
+id,name,description,icon,color,enabled,created_at,updated_at
+ndhs,Nigeria DHS,Comprehensive health and demographic survey data,fa-hospital-user,#15803d,t,2025-11-27 13:17:23.444477,2025-12-07 16:39:54.869744
+neds,NEDS (Education),Nigeria Education Data Survey,,,t,2025-12-20 12:27:30.362839,2025-12-20 13:09:17.745514

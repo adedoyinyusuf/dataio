@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dataio - Explore Nigerian demographic and health survey data">
+  <meta name="keywords" content="Nigeria, NDHS, health indicators, demographics, data visualization, Dataio">
+  <meta name="author" content="National Population Commission">
+
+  <title>Dataio | Data Explorer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+
+  <!-- External CSS Libraries -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="glass-header sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Logo & Title -->
+      <div class="flex items-center gap-4">
+        <div
+          class="w-12 h-12 bg-gradient-to-br from-green-600 to-green-800 rounded-xl flex items-center justify-center text-white shadow-lg shadow-green-900/20 card-hover-lift">
+          <i class="fa-solid fa-layer-group text-xl"></i>
+        </div>
+        <div>
+          <h1 class="text-2xl font-bold text-gray-900 leading-none">Dataio</h1>
+          <p class="text-xs font-semibold text-green-700 tracking-wide uppercase mt-1">Data
+            Explorer</p>
+        </div>
+      </div>
+
+      <!-- Context Badge & Actions -->
+      <div class="hidden md:flex items-center gap-3">
+        <div id="global-context-badge" class="badge card-hover">
+          <span class="dot animate-pulse"></span>
+          <span id="context-text">Loading...</span>
+        </div>
+        <button id="theme-toggle" class="btn btn-secondary">
+          <i class="fas fa-moon"></i>
+          Theme
+        </button>
+        <a href="/deepdive/" id="nav-login-link" class="btn btn-primary">
+          <i class="fas fa-chart-line"></i>
+          Xplore
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-container"
+    class="flex-grow w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8 transition-all duration-300">
+
+    <!-- Module Source Selection -->
+    <div id="module-cards" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 fade-in-up">
+      <!-- Dynamically populated -->
+    </div>
+
+    <!-- Dashboard -->
+    <div class="flex flex-col lg:flex-row gap-8 min-h-[700px] fade-in-up" style="animation-delay: 0.1s;">
+
+      <!-- Left Sidebar -->
+      <aside id="sidebar-container"
+        class="w-full lg:w-80 flex-shrink-0 flex flex-col gap-6 transition-transform duration-300">
+
+        <!-- Year Selector -->
+        <div id="year-selector-container" class="card card-hover">
+          <!-- Dynamically populated -->
+        </div>
+
+        <!-- Data Explorer Navigation -->
+        <div
+          class="bg-white rounded-xl border border-gray-200 shadow-sm flex-1 flex flex-col overflow-hidden h-[600px]">
+
+          <!-- Header -->
+          <div class="p-4 border-b border-gray-100 bg-gray-50">
+            <div class="flex items-center gap-3 mb-4">
+              <h3 class="text-lg font-bold text-gray-900 flex items-center gap-2">
+                <i class="fa-solid fa-chart-pie text-green-600"></i>
+                <span>Data Explorer</span>
+              </h3>
+            </div>
+            <div class="relative">
+              <input id="indicator-search" type="text" placeholder="Search indicators..."
+                class="w-full bg-white border border-gray-200 text-sm rounded-lg p-2.5 pl-9 focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-all outline-none">
+              <i class="fa-solid fa-magnifying-glass absolute left-3 top-3 text-gray-400 text-xs"></i>
+              <div id="search-results"
+                class="absolute z-10 mt-2 w-full bg-white border border-gray-200 rounded-lg shadow-xl hidden max-h-64 overflow-auto">
+              </div>
+            </div>
+          </div>
+
+          <!-- Explorer Menu (Accordion) -->
+          <div id="explorer-menu" class="flex-1 overflow-y-auto p-2 space-y-1 custom-scrollbar">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+      </aside>
+
+      <!-- Content Area -->
+      <div class="flex-grow card overflow-y-auto relative custom-scrollbar" id="main-content">
+        <!-- Dynamically populated -->
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Xplore Login Modal -->
+  <div id="deepdive-login-modal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50">
+    <div class="card w-full max-w-md mx-4">
+      <div class="card-header text-center">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Login to Xplore</h3>
+        <p class="text-sm text-gray-500">Use your mobile number to receive an OTP.</p>
+      </div>
+      <div class="card-body space-y-4">
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-2">Mobile Phone</label>
+          <input id="dd-phone" type="tel" placeholder="Enter your mobile number"
+            class="w-full bg-white border border-gray-300 text-sm rounded-lg p-3 focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-all">
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="flex-1">
+            <label class="block text-sm font-medium text-gray-700 mb-2">OTP Code</label>
+            <input id="dd-otp" type="text" placeholder="Enter OTP"
+              class="w-full bg-white border border-gray-300 text-sm rounded-lg p-3 focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-all">
+          </div>
+          <button id="dd-request" class="btn btn-secondary mt-6">
+            Request OTP
+          </button>
+        </div>
+      </div>
+      <div class="card-footer flex items-center justify-between">
+        <button id="dd-cancel" class="btn btn-ghost">
+          Cancel
+        </button>
+        <button id="dd-verify" class="btn btn-primary">
+          Verify & Login
+        </button>
+      </div>
+      <p id="dd-status" class="text-center text-sm text-gray-500 mt-4"></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-main">
+    <!-- Main Footer Content -->
+    <div class="footer-content">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+
+          <!-- About Section -->
+          <div class="footer-section">
+            <div class="mb-6">
+              <div class="flex items-center gap-3 mb-4">
+                <div
+                  class="w-12 h-12 bg-gradient-to-br from-green-600 to-green-800 rounded-xl flex items-center justify-center text-white shadow-lg">
+                  <i class="fa-solid fa-layer-group text-xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-white">Dataio</h3>
+                  <p class="text-xs text-green-300 uppercase tracking-wider">Data Explorer</p>
+                </div>
+              </div>
+              <p class="text-sm text-gray-300 leading-relaxed">
+                Empowering decision-makers with comprehensive Nigerian demographic and health survey data through
+                intuitive visualization and analysis tools.
+              </p>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="flex items-center gap-3">
+              <a href="#" class="footer-social-link" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="footer-social-link" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="footer-social-link" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="footer-social-link" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-section">
+            <h4 class="footer-title">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">
+                  <i class="fa-solid fa-chart-line text-xs"></i>
+                  <span>Data Explorer</span>
+                </a></li>
+              <li><a href="/deepdive/" class="footer-link">
+                  <i class="fa-solid fa-microscope text-xs"></i>
+                  <span>Xplore Analysis</span>
+                </a></li>
+              <li><a href="#" class="footer-link">
+                  <i class="fa-solid fa-database text-xs"></i>
+                  <span>Data Sources</span>
+                </a></li>
+              <li><a href="#" class="footer-link">
+                  <i class="fa-solid fa-book text-xs"></i>
+                  <span>Documentation</span>
+                </a></li>
+              <li><a href="#" class="footer-link">
+                  <i class="fa-solid fa-info-circle text-xs"></i>
+                  <span>About Us</span>
+                </a></li>
+            </ul>
+          </div>
+
+          <!-- Resources -->
+          <div class="footer-section">
+            <h4 class="footer-title">Resources</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">
+                  <i class="fa-solid fa-question-circle text-xs"></i>
+                  <span>Help Center</span>
+                </a></li>
+              <li><a href="#" class="footer-link">
+                  <i class="fa-solid fa-graduation-cap text-xs"></i>
+                  <span>Tutorials</span>
+                </a></li>
+              <li><a href="#" class="footer-link">
+                  <i class="fa-solid fa-download text-xs"></i>
+                  <span>Downloads</span>
+                </a></li>
+              <li><a href="#" class="footer-link">
+                  <i class="fa-solid fa-file-contract text-xs"></i>
+                  <span>Terms of Use</span>
+                </a></li>
+              <li><a href="#" class="footer-link">
+                  <i class="fa-solid fa-shield-alt text-xs"></i>
+                  <span>Privacy Policy</span>
+                </a></li>
+            </ul>
+          </div>
+
+          <!-- Contact & Actions -->
+          <div class="footer-section">
+            <h4 class="footer-title">Get Started</h4>
+            <div class="space-y-4">
+              <p class="text-sm text-gray-300 leading-relaxed">
+                Export data or share insights directly from the platform.
+              </p>
+              <div class="flex flex-col gap-3">
+                <button onclick="exportData()" class="footer-action-btn">
+                  <i class="fa-solid fa-download"></i>
+                  <span>Export Data</span>
+                </button>
+                <button onclick="shareView()" class="footer-action-btn">
+                  <i class="fa-solid fa-share-nodes"></i>
+                  <span>Share View</span>
+                </button>
+              </div>
+
+              <!-- Contact Info -->
+              <div class="mt-6 pt-6 border-t border-gray-700">
+                <p class="text-xs text-gray-400 mb-2">
+                  <i class="fa-solid fa-envelope text-green-400 mr-2"></i>
+                  info@dataio.gov.ng
+                </p>
+                <p class="text-xs text-gray-400">
+                  <i class="fa-solid fa-phone text-green-400 mr-2"></i>
+                  +234 (0) 800 DATAIO
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div class="flex items-center gap-6 text-sm text-gray-400">
+            <span>&copy; 2024 National Population Commission</span>
+            <span class="hidden md:inline">•</span>
+            <span>Made with <i class="fa-solid fa-heart text-red-500 text-xs animate-pulse"></i> in Nigeria</span>
+          </div>
+          <div class="flex items-center gap-4 text-xs text-gray-500">
+            <a href="#" class="footer-bottom-link">Terms</a>
+            <span>•</span>
+            <a href="#" class="footer-bottom-link">Privacy</a>
+            <span>•</span>
+            <a href="#" class="footer-bottom-link">Accessibility</a>
+            <span>•</span>
+            <a href="#" class="footer-bottom-link">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- External JavaScript Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+
+  <!-- Application Scripts -->
+  <script src="./assets/js/toast.js?v=1"></script>
+  <script src="./assets/js/category-icons.js"></script>
+  <script src="./assets/js/constants.js"></script>
+  <script src="./assets/js/utils.js"></script>
+  <script src="./assets/js/state.js"></script>
+  <script src="./assets/js/api.js"></script>
+  <script src="./assets/js/data.js"></script>
+  <script src="./assets/js/charts.js"></script>
+  <script src="./assets/js/components.js?v=8"></script>
+  <script src="./assets/js/handlers.js"></script>
+  <script src="./assets/js/app.js"></script>
+
+</body>
+
+</html>

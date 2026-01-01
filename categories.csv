@@ -1,0 +1,53 @@
+id,survey_id,key,title,description,display_order,created_at
+8aeacb7a-b21c-43e1-9cc3-ea2364d1b7b6,f553092d-000f-48eb-802b-7c6f6e6b3989,maternal,Maternal Care,Maternal health service coverage indicators,1,2025-11-27 13:17:23.444477
+54c2ae4a-0b9e-41f8-9751-7d52e77fce3b,f553092d-000f-48eb-802b-7c6f6e6b3989,education,Education,Educational attainment and school attendance rates,15,2025-12-07 16:54:01.393343
+1cc7c5e1-caf0-471e-8bc8-a6addbd8d0f2,f553092d-000f-48eb-802b-7c6f6e6b3989,food_security,Food Security,Food insecurity prevalence and severity,16,2025-12-07 16:54:01.393343
+11153849-8dca-483d-8554-c856929ecd1b,384f1a1c-73df-45bd-86fc-e732b4a9ffec,fever_treatment,Fever & Case Management,Care seeking and treatment for children with fever,3,2025-12-20 09:12:15.981549
+96bbab20-ba01-4c02-8bac-384f77f5af67,384f1a1c-73df-45bd-86fc-e732b4a9ffec,outcomes,Disease Outcomes,Prevalence of Malaria and Anaemia in Children,4,2025-12-20 09:12:15.981549
+1680c7c7-ddaa-4a20-9511-08200c32b5ed,f553092d-000f-48eb-802b-7c6f6e6b3989,fertility,Fertility,Total and age-specific fertility rates,2,2025-11-27 13:17:24.375078
+89c6aa14-b6b7-4ca2-9f10-b91ca4bbba68,f553092d-000f-48eb-802b-7c6f6e6b3989,child_mortality,Child Mortality,Early childhood mortality rates for the 10-year period before the survey,6,2025-11-28 13:18:59.701156
+50cd9f6e-66ed-4f40-a3d3-473d91da7417,f553092d-000f-48eb-802b-7c6f6e6b3989,family_planning_extended,Family Planning (Extended),Contraceptive use and family planning indicators,7,2025-11-28 13:18:59.960572
+963db290-de46-4cf8-b176-4c3796e0b9cd,f553092d-000f-48eb-802b-7c6f6e6b3989,hiv_aids,HIV/AIDS,"HIV knowledge, testing, and prevention",11,2025-11-28 13:19:00.942242
+5edf5532-b607-461c-b647-3e483faa7249,f553092d-000f-48eb-802b-7c6f6e6b3989,vaccination,Vaccination Coverage,Vaccination coverage among children aged 12-23 months,5,2025-11-28 13:18:59.396158
+c06af958-770d-4a42-af78-b9ac34b7a5b5,f553092d-000f-48eb-802b-7c6f6e6b3989,child_nutrition,Child Nutrition,Nutritional status of children,17,2025-11-30 19:44:23.724832
+1b52b297-5ca6-4f67-bc61-5f612afec830,f553092d-000f-48eb-802b-7c6f6e6b3989,malaria,Malaria Prevention,Malaria control indicators,18,2025-11-30 19:44:23.756554
+fe88a151-67cd-4cda-abc9-9a96492562c2,f553092d-000f-48eb-802b-7c6f6e6b3989,domestic_violence,Domestic Violence,Physical and sexual violence against women,14,2025-11-28 13:19:01.684438
+e49e7bc5-7cdc-4c5a-b48c-8c09816b9ca2,f553092d-000f-48eb-802b-7c6f6e6b3989,infectious_diseases,Infectious Diseases,"COVID-19, Hepatitis, and other diseases",15,2025-12-01 11:32:48.024417
+2615c0f5-b0a0-41fe-8d40-d3200cb09990,c2e2c6f3-c936-4c93-9816-6115c3c6cb8c,maternal,Maternal Care,Maternal Care indicators from NDHS 2018,1,2025-12-07 16:39:54.869744
+2a09b531-2029-4a0b-8ff0-00164551abcc,c2e2c6f3-c936-4c93-9816-6115c3c6cb8c,fertility,Fertility,Fertility indicators from NDHS 2018,2,2025-12-07 16:39:54.869744
+249bcc55-a760-4a92-a4da-a0674956e922,c2e2c6f3-c936-4c93-9816-6115c3c6cb8c,child_health,Child Health,Child Health indicators from NDHS 2018,3,2025-12-07 16:39:54.869744
+3305dc51-bf22-4543-b8fe-e5c0a5b73db6,c2e2c6f3-c936-4c93-9816-6115c3c6cb8c,vaccination,Vaccination Coverage,Vaccination Coverage indicators from NDHS 2018,4,2025-12-07 16:39:54.869744
+d742ffcd-6f9f-492b-b8d9-1f5b52691d3f,c2e2c6f3-c936-4c93-9816-6115c3c6cb8c,nutrition,Child Nutrition,Child Nutrition indicators from NDHS 2018,5,2025-12-07 16:39:54.869744
+1484fcaf-246d-4c52-ac19-5ebb0c9a5875,c2e2c6f3-c936-4c93-9816-6115c3c6cb8c,family_planning,Family Planning,Family Planning indicators from NDHS 2018,6,2025-12-07 16:39:54.869744
+90458d58-634b-4624-be63-6ba01e9fcc41,c2e2c6f3-c936-4c93-9816-6115c3c6cb8c,hiv_aids,HIV/AIDS,HIV/AIDS indicators from NDHS 2018,7,2025-12-07 16:39:54.869744
+ab972cdc-0a4e-4099-a77b-cb92ca64cccf,c2e2c6f3-c936-4c93-9816-6115c3c6cb8c,malaria,Malaria,Malaria indicators from NDHS 2018,8,2025-12-07 16:39:54.869744
+7ca212df-7e91-4229-8083-95d2e77545cf,c2e2c6f3-c936-4c93-9816-6115c3c6cb8c,water_sanitation,Water & Sanitation,Water & Sanitation indicators from NDHS 2018,9,2025-12-07 16:39:54.869744
+9e3975d2-0633-41b1-9629-4a2f2435ff8b,f553092d-000f-48eb-802b-7c6f6e6b3989,household,Household Characteristics,"Housing conditions, electricity access, and clean fuel usage",13,2025-12-07 16:54:01.393343
+76cbacbf-71d1-4446-aaf6-7503f1968063,f553092d-000f-48eb-802b-7c6f6e6b3989,demographics,Demographics,"Population structure, age distribution, and dependency ratios",14,2025-12-07 16:54:01.393343
+4ab6b32d-2727-4e47-ac45-fef8ff8db89d,f553092d-000f-48eb-802b-7c6f6e6b3989,disability,Disability,Disability prevalence across functional domains and age groups,10,2025-12-07 16:20:51.104707
+5701bab7-fdc4-4e2c-8186-182f786a8f92,f553092d-000f-48eb-802b-7c6f6e6b3989,womens_empowerment,Women's Empowerment,"Employment, decision-making, and women's autonomy indicators",12,2025-11-28 13:19:01.180023
+a4d8aa4f-774f-469a-b149-5d58f19834d7,f553092d-000f-48eb-802b-7c6f6e6b3989,water_sanitation,Water & Sanitation,Access to safe drinking water and sanitation facilities,12,2025-12-07 16:20:51.104707
+2af98a55-5349-41da-a17b-fcf2f528335e,33a6af69-de75-4c5d-a97b-053f6c1194f9,resources,Educational Resources,,4,2025-12-20 14:51:56.850612
+cae85b43-53e8-4a7c-9028-351431efb035,33a6af69-de75-4c5d-a97b-053f6c1194f9,access,Educational Access & Barriers,,5,2025-12-20 15:05:46.251116
+8c00be64-a4ea-43a7-9ebc-d206515ce757,384f1a1c-73df-45bd-86fc-e732b4a9ffec,demographics,Population Demographics,Household population by age,0,2025-12-19 21:50:33.655193
+631b38e3-d5c5-4107-9baf-fb7ed7e42415,384f1a1c-73df-45bd-86fc-e732b4a9ffec,respondent_background,Respondent Background,Education and Literacy of Respondents,1,2025-12-20 07:07:58.286696
+292e84d6-81df-4fe7-80b8-7cb0b6c45120,384f1a1c-73df-45bd-86fc-e732b4a9ffec,malaria_prevention,Malaria Prevention,Ownership and Access to ITNs,2,2025-12-20 07:07:58.286696
+a2f57568-1024-4572-a3a6-e428f13c243a,33a6af69-de75-4c5d-a97b-053f6c1194f9,governance,School Governance & Status,,6,2025-12-20 15:06:32.563409
+76240ee0-9e70-4483-9ce0-4459cf0b6f12,c7e9ec7c-0769-4f02-b597-97bdd2f96b1e,prevalence,HIV Prevalence,HIV prevalence rates across demographics,1,2025-12-20 16:42:18.234339
+c292fcc8-df83-4ee7-b26d-9ab53931d749,33a6af69-de75-4c5d-a97b-053f6c1194f9,demographics,Household Population,,1,2025-12-20 12:27:30.362839
+d0a2afff-dd61-42c7-8b7a-88420faa345a,33a6af69-de75-4c5d-a97b-053f6c1194f9,attendance,School Attendance,,2,2025-12-20 12:27:30.362839
+14a2c7f5-465e-4cee-bdbf-afeaa1bca4b6,33a6af69-de75-4c5d-a97b-053f6c1194f9,literacy,Literacy & Numeracy,,3,2025-12-20 12:27:30.362839
+85267977-f7d0-4be3-9074-3b88b89df056,c7e9ec7c-0769-4f02-b597-97bdd2f96b1e,treatment,Treatment & Care,Antiretroviral therapy coverage and viral suppression rates,2,2025-12-20 17:15:37.033541
+b457b95a-55af-450e-9325-de18cfb4affb,c7e9ec7c-0769-4f02-b597-97bdd2f96b1e,testing,HIV Testing & Counseling,HIV testing coverage and counseling services,3,2025-12-20 17:22:15.98729
+836f7f15-d456-4ddc-b03e-de811a3121f1,c7e9ec7c-0769-4f02-b597-97bdd2f96b1e,prevention,Prevention Programs,"PMTCT, condom use, and HIV prevention strategies",4,2025-12-20 17:26:40.689501
+1d059b60-41cd-468f-a13d-27b5d496397a,c7e9ec7c-0769-4f02-b597-97bdd2f96b1e,coinfections,Co-Infections,"TB, Hepatitis B, and Hepatitis C co-infections with HIV",5,2025-12-20 17:52:48.81894
+d73f5fb2-54ff-4135-81b2-d9e401096210,c7e9ec7c-0769-4f02-b597-97bdd2f96b1e,awareness,Knowledge & Awareness,"HIV knowledge, misconceptions, and prevention awareness",6,2025-12-20 17:54:39.305216
+4d060da2-3bfc-43db-8c86-038c31e60447,384f1a1c-73df-45bd-86fc-e732b4a9ffec,household,Household Characteristics,"Data on household composition, water, and sanitation",1,2025-12-20 06:50:46.589187
+2311bffe-af64-40c0-8018-ac47692ee044,3c116859-57da-4bb0-90d1-1c590b372bc6,fever_treatment,Fever & Case Management,Care seeking and treatment for children with fever,3,2025-12-21 12:10:39.994069
+447e164e-5daa-4415-afdf-212aad374cb5,3c116859-57da-4bb0-90d1-1c590b372bc6,children,Child Health,,99,2025-12-21 13:40:11.701271
+83bd9db4-8778-4004-a0df-a15926d7af29,3c116859-57da-4bb0-90d1-1c590b372bc6,demographics,Demographics,Household population by age,0,2025-12-21 12:10:39.994069
+6fe87074-4fea-4b7f-96df-673d84ded76e,3c116859-57da-4bb0-90d1-1c590b372bc6,knowledge,Knowledge & Beliefs,,99,2025-12-21 13:40:12.415382
+a76e114f-d051-40fb-a7ff-02dfa5c4ba3b,c7e9ec7c-0769-4f02-b597-97bdd2f96b1e,naiis_inc_683aba3b,HIV Incidence,,1,2025-12-21 15:36:20.242909
+aa0b59fd-f51c-459c-ac78-5c861b23b071,c7e9ec7c-0769-4f02-b597-97bdd2f96b1e,naiis_vls_05400947,Viral Load Suppression,,3,2025-12-21 15:36:20.242909
+fdde1bf6-a643-4a0c-997b-39763b53b972,3c116859-57da-4bb0-90d1-1c590b372bc6,prevention,Malaria Prevention,,99,2025-12-21 13:40:11.733007
+f8c12e68-1fa9-4891-a050-effba81f0a5c,3c116859-57da-4bb0-90d1-1c590b372bc6,pregnancy,Maternal Health,,99,2025-12-21 13:40:11.846381
