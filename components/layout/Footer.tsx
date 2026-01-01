@@ -77,8 +77,8 @@ export default function Footer() {
                                 { name: 'Help Center', url: '#', icon: '❓' },
                                 { name: 'Tutorials', url: '#', icon: '🎓' },
                                 { name: 'Downloads', url: '#', icon: '⬇️' },
-                                { name: 'Terms of Use', url: '#', icon: '📜' },
-                                { name: 'Privacy Policy', url: '#', icon: '🔒' }
+                                { name: 'Terms of Use', url: '/terms', icon: '📜' },
+                                { name: 'Privacy Policy', url: '/privacy', icon: '🔒' }
                             ].map((link) => (
                                 <li key={link.name}>
                                     <Link
@@ -139,7 +139,13 @@ export default function Footer() {
                         </div>
 
                         <div className="flex flex-wrap justify-center gap-4">
-                            {['Terms', 'Privacy', 'Accessibility', 'Sitemap'].map((item) => (
+                            <Link href="/terms" className="text-blue-100 hover:text-white transition-colors">
+                                Terms
+                            </Link>
+                            <Link href="/privacy" className="text-blue-100 hover:text-white transition-colors">
+                                Privacy
+                            </Link>
+                            {['Accessibility', 'Sitemap'].map((item) => (
                                 <Link
                                     key={item}
                                     href="#"
