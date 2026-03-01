@@ -25,14 +25,16 @@ export default function Footer() {
                         {/* Social Media Icons */}
                         <div className="flex gap-3 pt-2">
                             {[
-                                { name: 'Facebook', icon: '📘', url: '#' },
-                                { name: 'Twitter', icon: '🐦', url: '#' },
-                                { name: 'LinkedIn', icon: '💼', url: '#' },
-                                { name: 'Instagram', icon: '📷', url: '#' }
+                                { name: 'Facebook', icon: '📘', url: 'https://facebook.com/dataio' },
+                                { name: 'Twitter', icon: '🐦', url: 'https://twitter.com/dataio' },
+                                { name: 'LinkedIn', icon: '💼', url: 'https://linkedin.com/company/dataio' },
+                                { name: 'Instagram', icon: '📷', url: 'https://instagram.com/dataio' }
                             ].map((social) => (
                                 <a
                                     key={social.name}
                                     href={social.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     aria-label={social.name}
                                     className="w-10 h-10 flex items-center justify-center rounded-lg bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 hover:scale-110 transition-all duration-300"
                                 >
@@ -49,8 +51,8 @@ export default function Footer() {
                             {[
                                 { name: 'Data Explorer', url: '/explorer', icon: '📊' },
                                 { name: 'Xplore Analysis', url: '/xplore', icon: '🔍' },
-                                { name: 'Data Sources', url: '#', icon: '📁' },
-                                { name: 'Documentation', url: '#', icon: '📖' },
+                                /* { name: 'Data Sources', url: '#', icon: '📁' }, */
+                                /* { name: 'Documentation', url: '#', icon: '📖' }, */
                                 { name: 'About Us', url: '/about', icon: 'ℹ️' }
                             ].map((link) => (
                                 <li key={link.name}>
@@ -74,9 +76,9 @@ export default function Footer() {
                         <h4 className="text-lg font-semibold text-white">Resources</h4>
                         <ul className="space-y-2">
                             {[
-                                { name: 'Help Center', url: '#', icon: '❓' },
-                                { name: 'Tutorials', url: '#', icon: '🎓' },
-                                { name: 'Downloads', url: '#', icon: '⬇️' },
+                                /* { name: 'Help Center', url: '#', icon: '❓' }, */
+                                /* { name: 'Tutorials', url: '#', icon: '🎓' }, */
+                                /* { name: 'Downloads', url: '#', icon: '⬇️' }, */
                                 { name: 'Terms of Use', url: '/terms', icon: '📜' },
                                 { name: 'Privacy Policy', url: '/privacy', icon: '🔒' }
                             ].map((link) => (
@@ -145,7 +147,7 @@ export default function Footer() {
                             <Link href="/privacy" className="text-blue-100 hover:text-white transition-colors">
                                 Privacy
                             </Link>
-                            {['Accessibility', 'Sitemap'].map((item) => (
+                            {/* {['Accessibility', 'Sitemap'].map((item) => (
                                 <Link
                                     key={item}
                                     href="#"
@@ -153,7 +155,7 @@ export default function Footer() {
                                 >
                                     {item}
                                 </Link>
-                            ))}
+                            ))} */}
                         </div>
                     </div>
                 </div>
